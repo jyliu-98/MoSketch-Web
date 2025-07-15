@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>D&M: Enriching E-commerce Videos with Sound Effects by Key Moment Detection and SFX Matching</title>
+  <link rel="icon" type="image/x-icon" href="static/images/bitbug_favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+
+  <script>MathJax = {tex: {inlineMath: [['$', '$'],['$$', '$$'], ['\\(', '\\)']]}}</script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">D&M: Enriching E-commerce Videos with Sound Effects by Key Moment Detection and SFX Matching</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://scholar.google.com.hk/citations?user=u7Dqok8AAAAJ&hl=zh-CN" target="_blank">Jingyu Liu</a><sup>1,2</sup>,</span>
+                <span class="author-block">
+                  <a href="AUTHOR PERSONAL LINK" target="_blank">Minquan Wang</a><sup>2</sup>,</span>
+                  <span class="author-block">
+                    <a href="AUTHOR PERSONAL LINK" target="_blank">Ye Ma</a><sup>2</sup>,</span>
+                    <span class="author-block">
+                      <a href="AUTHOR PERSONAL LINK" target="_blank">Bo Wang</a><sup>2</sup>,</span>
+                      <span class="author-block">
+                        <a href="https://jewelchen2019.github.io" target="_blank">Aozhu Chen</a><sup>1,2</sup>,</span>
+                        <span class="author-block">
+                          <a href="AUTHOR PERSONAL LINK" target="_blank">Quan Chen</a><sup>2</sup>,</span>
+                          <span class="author-block">
+                            <a href="AUTHOR PERSONAL LINK" target="_blank">Peng Jiang</a><sup>2</sup>,</span>
+                            <span class="author-block">
+                              <a href="https://lixirong.net" target="_blank">Xirong Li</a><sup>1*</sup>
+                            </span>
+                            </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block"><sup>1</sup>MoE Key Lab of DEKE, Renmin University of China&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<sup>2</sup>Kuaishou Technology</span>
+                    <span class="eql-cntrb"><small><br><sup>*</sup>Corresponding Author</small></span>
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="https://arxiv.org/pdf/2408.13226.pdf" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="ai ai-arxiv"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/adxcreative/D-M" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code & Data</span>
+                  </a>
+                </span>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- intro-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+    <img src="static/images/intro.png" />
+    <h2 class="subtitle has-text-centered">
+    Illustration of video decoration with sound effects (<span style="color:red">VDSFX</span>), aiming to automatically add proper SFX to key moments, which are also auto-detected, in a given E-commerce video. Note that Moment-DETR+ and $\text{R}^2\text{-Tuning}$+ are baselines we have implemented, by re-purposing Moment-DETR and $\text{R}^2\text{-Tuning}$ for the new task, with their detected moments used for moment-to-SFX matching. <p><span style="color:blue">D&M</span> is our proposed method, achieving superior performance.
+    </div>
+  </div>
+</section>
+<!-- End intro -->
+
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+          Videos showcasing specific products are increasingly important for E-commerce. Key moments naturally exist as the first appearance of a specific product, presentation of its distinctive features, the presence of a buying link, etc. Adding proper sound effects (SFX) to these key moments, or video decoration with SFX (<span style="color:red">VDSFX</span>), is crucial for enhancing the user engaging experience. Previous studies about adding SFX to videos perform video to SFX matching at a holistic level, lacking the ability of adding SFX to a specific moment. Meanwhile, previous studies on video highlight detection or video moment retrieval consider only moment localization, leaving moment to SFX matching untouched. By contrast, we propose in this paper <span style="color:blue">D&M</span>, a unified method that  accomplishes key moment detection and moment to SFX matching simultaneously. Moreover, for the new <span style="color:red">VDSFX</span> task we build a large-scale dataset SFX-Moment from an E-commerce platform. For a fair comparison, we build competitive baselines by extending a number of current video moment detection methods to the new task. Extensive experiments on SFX-Moment show the superior performance of the proposed method over the baselines. 
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+
+<!-- method-->
+<section class="hero teaser">
+  <div class="container">
+    <div class="hero-body">
+    <h2 class="title has-text-centered is-3">Framework</h2>
+    <img src="static/images/method.png" />
+    <h2 class="subtitle has-text-centered">
+      Conceptual diagram of our proposed <span style="color:blue">D&M</span> method for <span style="color:red">VDSFX</span>. The video as an example consists of $n=30$ frames with $m=9$ subtitles. "SFX0" is a special token indicating "no SFX". The ASR module and the visual / textual / audio backbones, ie ViT / RoBERTa / AST, are all frozen. Non-trainable blocks are shown in gray. 
+    </div>
+  </div>
+</section>
+<!-- End method -->
+
+<!-- dataset-->
+<section class="hero teaser">
+  <div class="container">
+    <div class="hero-body">
+    <h2 class="title has-text-centered is-3">Dataset: SFX-Moment</h2>
+    <img src="static/images/dataset.png" />
+    <h2 class="subtitle has-text-centered">
+      Collection pipeline of our <span style="color:green">SFX-Moment</span> dataset.
+    <img src="static/images/stat.png" />
+    <h2 class="subtitle has-text-centered">
+      Basic statistics of our <span style="color:green">SFX-Moment</span> dataset. Note that a specific sound effect from a given SFX set can be applied to multiple videos. We consider a closed set of SFX.
+    <img src="static/images/dist.png" />
+    <h2 class="subtitle has-text-centered">
+      Visualization of data statistics of <span style="color:green">SFX-Moment</span>.
+    </div>
+  </div>
+</section>
+<!-- End dataset -->
+
+<!-- experiment-->
+<section class="hero teaser">
+  <div class="container">
+    <div class="hero-body">
+    <h2 class="title has-text-centered is-3">Quantitative results of D&M</h2>
+    <img src="static/images/experiment.png" />
+    </div>
+  </div>
+</section>
+<!-- End experiment -->
+
+
+<!-- Image carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title has-text-centered is-3">Qualitative results of D&M</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item">
+          <!-- Your image here -->
+          <img src="static/images/vision_1.png" width="100%"/>
+        </div>
+        <div class="item">
+          <!-- Your image here -->
+          <img src="static/images/vision_2.png" width="100%"/>
+        </div>
+        <div class="item">
+          <!-- Your image here -->
+          <img src="static/images/vision_3.png" width="100%"/>
+        </div>
+        <div class="item">
+          <!-- Your image here -->
+          <img src="static/images/vision_4.png" width="100%"/>
+        </div>
+        <div class="item">
+          <!-- Your image here -->
+          <img src="static/images/vision_5.png" width="100%"/>
+        </div>
+        <div class="item">
+          <!-- Your image here -->
+          <img src="static/images/vision_6.png" width="100%"/>
+        </div>
+  </div>
+</div>
+</div>
+</section>
+<!-- End image carousel -->
+
+<!-- Video carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title has-text-centered is-3">Video Decoration Result </h2>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-video1">
+          <table>
+            <tr>
+            <td>
+              <center>
+              <h2 class="title has-text-centered">
+                  Input Video
+              </h2>
+              <video poster="" id="video2" controls width="80%" height="80%">
+              <!-- Your video file here -->
+              <source src="static/videos/input_1.mp4"
+              type="video/mp4">
+              </video>
+              </center>
+            </td>
+            <td>
+              <center>
+              <h2 class="title has-text-centered">
+                  Prediction
+              </h2>
+              <video poster="" id="video2" controls width="80%" height="80%">
+              <!-- Your video file here -->
+              <source src="static/videos/predict_1.mp4"
+              type="video/mp4">
+              </video>
+              </center>
+            </td>
+            </tr>
+          </table>
+        </div>
+        <div class="item item-video2">
+          <table>
+            <tr>
+            <td>
+              <center>
+              <h2 class="title has-text-centered">
+                  Input Video
+              </h2>
+              <video poster="" id="video2" controls width="80%" height="80%">
+              <!-- Your video file here -->
+              <source src="static/videos/input_2.mp4"
+              type="video/mp4">
+              </video>
+              </center>
+            </td>
+            <td>
+              <center>
+              <h2 class="title has-text-centered">
+                  Prediction
+              </h2>
+              <video poster="" id="video2" controls width="80%" height="80%">
+              <!-- Your video file here -->
+              <source src="static/videos/predict_2.mp4"
+              type="video/mp4">
+              </video>
+              </center>
+            </td>
+            </tr>
+          </table>
+        </div>
+        <div class="item item-video3">
+          <table>
+            <tr>
+            <td>
+              <center>
+              <h2 class="title has-text-centered">
+                  Input Video
+              </h2>
+              <video poster="" id="video2" controls width="80%" height="80%">
+              <!-- Your video file here -->
+              <source src="static/videos/input_3.mp4"
+              type="video/mp4">
+              </video>
+              </center>
+            </td>
+            <td>
+              <center>
+              <h2 class="title has-text-centered">
+                  Prediction
+              </h2>
+              <video poster="" id="video2" controls width="80%" height="80%">
+              <!-- Your video file here -->
+              <source src="static/videos/predict_3.mp4"
+              type="video/mp4">
+              </video>
+              </center>
+            </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End video carousel -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
+
+
